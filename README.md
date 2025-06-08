@@ -5,7 +5,7 @@
 ### Ejecución en Google Colab
 
 1. Abrir en el navegador una cuenta Google.
-2. En ese mismo navegador, abrir el enlace a un Jupyter que se abre directamente en Colab:
+2. En ese mismo navegador, pulsar en el siguiente enlace (se abrirá directamente en Google Colab):
 
 > [https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/Entorno_Fortran_en_Colab.ipynb](https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/fortran_colab.ipynb)
 
