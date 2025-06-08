@@ -7,9 +7,9 @@
 1. Abrir en el navegador una cuenta Google.
 2. En ese mismo navegador, pulsar en el siguiente enlace (se abrirá directamente en Google Colab):
 
-> [https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/Entorno_Fortran_en_Colab.ipynb](https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/fortran_colab.ipynb)
+> [https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/fortran_colab.ipynb](https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/fortran_colab.ipynb)
 
-Esta dirección se obtiene sustituyendo, en la dirección de un Jupyter alojado en Github, la parte `https://github.com/` por `https://colab.research.google.com/github/`.
+**Observación:** Esta dirección se obtiene sustituyendo, en la dirección de un Jupyter alojado en Github, la parte `https://github.com/` por `https://colab.research.google.com/github/`.
 
 <!-- 
 3. Una vez allí, ejecutar las celdas de código de dicho Jupyter.
