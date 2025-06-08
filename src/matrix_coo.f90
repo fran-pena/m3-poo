@@ -24,7 +24,7 @@ contains
 subroutine dealloc(this)
 type(matrix) :: this
 integer :: res
-character(255) :: cad
+character(260) :: cad
 
 if (allocated(this%row)) deallocate(this%row, stat = res, errmsg = cad)
 if (res /= 0) error stop '(matrix/dealloc) Unable to deallocate variable row: '//trim(cad)
@@ -38,7 +38,7 @@ subroutine alloc(this, row, col, val)
 type(matrix)             :: this
 integer,      intent(in) :: row(:), col(:)
 real(real64), intent(in) :: val(:)
-character(255) ::  cad
+character(260) ::  cad
 
 if (size(row,1) /= size(col,1) .or. size(row,1) /= size(val,1)) &
   error stop '(matrix/alloc) The three input arrays have different size.'
@@ -60,7 +60,7 @@ end subroutine
 subroutine read_matrix(this, filename)
 type(matrix)             :: this
 character(*), intent(in) :: filename
-character(255) :: cad
+character(260) :: cad
 integer :: iu, ios, nval, i
 
 open(newunit=iu, file = filename, iostat = ios, position='rewind')
@@ -80,7 +80,7 @@ function size_matrix(this, d) result(res)
 type(matrix), intent(in) :: this
 integer,      intent(in) :: d
 integer :: res
-character(255) :: cad
+character(260) :: cad
 
 select case (d)
 case(1)
@@ -98,7 +98,7 @@ type(matrix), intent(in) :: this
 integer,      intent(in) :: i, j
 real(real64)             :: val
 integer :: k
-character(255) :: cad
+character(260) :: cad
 
 if (.not. allocated(this%row) .or. .not. allocated(this%col) .or. .not. allocated(this%val)) &
   error stop '(matrix/get_sca) Matrix is not allocated.'
