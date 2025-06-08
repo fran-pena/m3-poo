@@ -7,7 +7,7 @@
 1. Abrir en el navegador una cuenta Google.
 2. En ese mismo navegador, abrir el enlace a un Jupyter que se abre directamente en Colab:
 
-> [https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/Entorno_Fortran_en_Colab.ipynb](https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/Entorno_Fortran_en_Colab.ipynb)
+> [https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/Entorno_Fortran_en_Colab.ipynb](https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/fortran_colab.ipynb)
 
 Esta dirección se obtiene sustituyendo, en la dirección de un Jupyter alojado en Github, la parte `https://github.com/` por `https://colab.research.google.com/github/`.
 
