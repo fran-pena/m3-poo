@@ -11,9 +11,9 @@
 
 Esta dirección se obtiene sustituyendo, en la dirección de un Jupyter alojado en Github, la parte `https://github.com/` por `https://colab.research.google.com/github/`.
 
+<!-- 
 3. Una vez allí, ejecutar las celdas de código de dicho Jupyter.
-
-<!-- seguir las instrucciones 
+seguir las instrucciones 
 En este ejemplo
 Las matrices `sparse` de Matlab se guardan en formato _compressed sparse row_ (CSR) [1], mediante tres arreglos unidimensionales:
 - los valores no nulos, 
