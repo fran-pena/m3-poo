@@ -6,7 +6,7 @@
 
 Pulsar en el siguiente enlace (se abrirá directamente en Google Colab):
 
-> [https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/fortran_colab.ipynb](https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/fortran_colab.ipynb)
+[https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/fortran_colab.ipynb](https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/fortran_colab.ipynb)
 
 **Observación:** Esta dirección se obtiene sustituyendo, en la dirección de un Jupyter alojado en Github, la parte `https://github.com/` por `https://colab.research.google.com/github/`.
 
