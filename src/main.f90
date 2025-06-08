@@ -35,7 +35,8 @@ integer :: i, j
 
 write(iu,*) 'subplot(1, 3,', iplot, ')'
 write(iu,*) name//' = [', ((get(M, i, j), j = 1, size(M,2)),';', i = 1, size(M,1)), '];'
-write(iu,*) 'title(', name, ')'
+write(iu,*) 'spy(', name, ')'
+write(iu,*) 'title(''', name, ''')'
 end subroutine
 
 end program
