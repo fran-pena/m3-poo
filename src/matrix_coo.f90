@@ -13,18 +13,17 @@ interface read;   module procedure read_matrix;  end interface
 interface size;   module procedure size_matrix;  end interface
 interface set;    module procedure set_sca;      end interface
 interface lu;     module procedure lu_matrix;    end interface
-interface print;  module procedure print_matrix; end interface
 interface get
   module procedure get_sca
   module procedure get_row
   module procedure get_col
 end interface
-private :: read_matrix, size_matrix, get_sca, get_col, get_row, set_sca, lu_matrix, print_matrix
+private :: read_matrix, size_matrix, get_sca, get_col, get_row, set_sca, lu_matrix
 
 contains
 subroutine dealloc(this)
 type(matrix) :: this
-integer :: i, res
+integer :: res
 character(255) :: cad
 
 if (allocated(this%row)) deallocate(this%row, stat = res, errmsg = cad)
@@ -62,9 +61,7 @@ subroutine read_matrix(this, filename)
 type(matrix)             :: this
 character(*), intent(in) :: filename
 character(255) :: cad
-integer :: iu, ios, n, m, nval, i
-integer, allocatable :: row(:), col(:)
-real(real64), allocatable :: val(:)
+integer :: iu, ios, nval, i
 
 open(newunit=iu, file = filename, iostat = ios, position='rewind')
 if (ios /= 0) error stop '(matrix/read_matrix) Unable to open '//trim(filename)
@@ -185,14 +182,6 @@ do j = 1, size(a,2)
   do i = j+1, size(a,2)
     call set(l, i, j, (get(a, i, j) - dot_product(get(l, i, [(k, k=1,j-1)]), get(u, [(k, k=1,j-1)], j))) / get(u, j, j))
   end do
-end do
-end subroutine
-
-subroutine print_matrix(this)
-type(matrix), intent(in)  :: this
-integer :: i, j
-do i = 1, this%n
-  print*, get(this, i, [(j, j = 1, this%m)])
 end do
 end subroutine
 end module
