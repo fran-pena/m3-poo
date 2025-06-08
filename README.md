@@ -4,8 +4,7 @@
 
 ### Ejecución en Google Colab
 
-1. Abrir en el navegador una cuenta Google.
-2. En ese mismo navegador, pulsar en el siguiente enlace (se abrirá directamente en Google Colab):
+Pulsar en el siguiente enlace (se abrirá directamente en Google Colab):
 
 > [https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/fortran_colab.ipynb](https://colab.research.google.com/github/fran-pena/m3-poo/blob/main/fortran_colab.ipynb)
 
